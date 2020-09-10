@@ -3,11 +3,11 @@
 |Column|Type|Options|
 |------|----|-------|
 |email|string|unique:true, null: false|
-|password|string|null: false|
+|encrypted_password|string|null: false|
 |name|string|null: false|
 |profile|string|null: false|
-|belongs|string|null: false|
-|position|string|null: false|
+|occupation|text|null: false|
+|position|text|null: false|
 
 ### Association
 - has_many: prototypes
