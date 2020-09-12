@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2020_09_12_102724) do
     t.string "title", null: false
     t.text "catch_copy", null: false
     t.text "concept", null: false
-    t.text "images", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
