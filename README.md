@@ -17,8 +17,8 @@
 
 |Column|Type|Options|
 |-----|-----|-------|
-|name|string|null:false|
-|copy|text|null:false|
+|title|string|null:false|
+|catch_copy|text|null:false|
 |concept|text|null:false|
 |images|text|null:false|
 |user_id|reference|null:false, foregin_key:true|
