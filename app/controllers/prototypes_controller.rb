@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
- before_action :set_param only: [:show, :edit]
+ before_action :set_param, only: [:show, :edit]
 
 
   def index
