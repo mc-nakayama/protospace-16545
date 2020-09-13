@@ -1,7 +1,7 @@
 ## usersテーブル
 
 |Column|Type|Options|
-|------|----|-------|
+| ------ | ---- | ------- |
 |email|string|unique:true, null: false|
 |password|string|null: false|
 |name|string|null: false|
@@ -16,7 +16,7 @@
 ## prototypesテーブル
 
 |Column|Type|Options|
-|-----|-----|-------|
+| ----- | ----- | ------- |
 |title|string|null:false|
 |catch_copy|text|null:false|
 |concept|text|null:false|
