@@ -23,6 +23,17 @@ class PrototypesController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if Prototype.update(prototype_params)
+      redirect_to edit_prototype_path(@prototype.id)
+    else
+      redirect_to prototype_path(@prototype.id)
+    end
+  end
+
 
   private
   def prototype_params
