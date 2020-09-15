@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
- before_action :set_param, only: [:show, :edit, :update]
+ before_action :set_param, only: [:show, :edit, :update, :destory]
 
 
   def index
@@ -34,6 +34,8 @@ class PrototypesController < ApplicationController
     end
   end
 
+  def destory
+  end
 
   private
   def prototype_params
