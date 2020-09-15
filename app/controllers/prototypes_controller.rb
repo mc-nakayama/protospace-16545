@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
- before_action :set_param, only: [:show, :edit]
+ before_action :set_param, only: [:show, :edit, :update]
 
 
   def index
@@ -21,6 +21,17 @@ class PrototypesController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @prototype.update(prototype_params)
+      redirect_to prototype_path(params[:id])
+    else
+      render :edit
+    end
   end
 
 
