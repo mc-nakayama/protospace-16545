@@ -30,9 +30,9 @@
 ## commentsテーブル
 |Column|Type|Options|
 |-----|-----|-------|
-|content|text|null:false|
-|user_id|reference|null:false, foreign_key:true|
-|prototype_id|reference|null:false, foreign_key:true|
+|text|text|null:false|
+|user_id|references|null:false, foreign_key:true|
+|prototype_id|references|null:false, foreign_key:true|
 
 ### Association
 - belongs_to: user
